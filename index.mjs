@@ -85,7 +85,6 @@ async function captureVanity(vanityCode) {
   readMfaToken();
   if (!mfaToken) {
     console.log("MFA token yok, sniper calismiyor mal");
-    sendLog("⚠️ MFA token yok, sniper calismiyor mal");
     return;
   }
   const body = JSON.stringify({ code: vanityCode });
